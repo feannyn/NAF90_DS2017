@@ -2,7 +2,7 @@ Nicholas Feanny; naf16b; proj2.x
 
 reverse() Big-O analysis:
 	reverse shows linear growth. As such it is of O(n) due to
-	the for loop imbedded inside the reverse function which acts
+	the for loop embedded inside the reverse function which acts
 	as the predominant player in how this algorithm behaves in relation
 	to performance.The loop iterates through the list and reverses the 
 	direction of next and previous of each node until the end.
