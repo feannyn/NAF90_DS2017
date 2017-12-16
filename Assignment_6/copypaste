@@ -1,0 +1,50 @@
+for(auto & itr : indie)
+		{
+			
+
+			itr = tolower(itr);//make the letter lowercase
+
+
+			if(isalpha(itr))
+			{
+				cout << "ITR: " << itr << endl;			
+
+				cout << "INSIDE ISALPHA IF" << endl;
+				
+				total += itr;
+
+				cout << "total incremented" << endl;					
+			
+				cout << "TOTAL: " << total << endl;
+
+				auto holder = itr++;
+
+				//cin.peek the iterator after increment ? 
+
+				if(isdigit(holder))
+				{
+					cout << "A_! ELSE" << endl;
+					storage.insert(pair<string, int>(total, 0));
+					total.erase();
+				}
+						
+				cout << "isALPHA Completed" << endl;
+			}	
+			else if(isdigit(itr))
+			{
+				cout << "INSIDE DIGIT IF" << endl;
+				total += itr;
+			//	cout << "total digit incremented: ";
+			//	cout << "TOTAL: " << endl; 
+				if(isalpha(itr))
+				{
+			//		cout << "IN DIGIT ELSE" << endl;
+					storage.insert(pair<string, int>(total, 0));
+					total.erase();
+				}
+			}
+			
+			
+
+			
+		}
